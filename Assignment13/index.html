@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
 
+<body>
+
+    <h2> Todo-list JavaScript Objects</h2>
+
+    Click the button to display todo-list:<button onclick="onAdd()">Add</button><br><br>
+
+    <label for="Title"><b>Title:</b></label>
+    <ul id="title">
+
+    </ul>
+    <label for="description"><b>Description:</b></label>
+    <ul id="description">
+
+    </ul>
+
+    <script>
+        function onAdd() {
+            const todo1 = {
+                title: "Udemy Jquery course",
+                description: "Complete 1 to 3 modules"
+            }
+
+            document.getElementById("title").innerText = JSON.stringify(todo1.title);
+            document.getElementById("description").innerText = JSON.stringify(todo1.description);
+        }
+    </script>
+
+</body>
+
+</html>
